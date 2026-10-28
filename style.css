@@ -1,0 +1,78 @@
+:root {
+  --brand: #a82a2e;
+  --text: #111111;
+  --bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background: var(--bg);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--brand);
+}
+
+.logo svg {
+  width: 36px;
+  height: 36px;
+  fill: var(--brand);
+}
+
+.logo span {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--brand);
+  border-bottom-color: var(--brand);
+  outline: none;
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .navbar { padding: 12px 16px; }
+  .logo span { font-size: 20px; }
+  .logo svg { width: 28px; height: 28px; }
+  .nav-links { gap: 14px; }
+}
