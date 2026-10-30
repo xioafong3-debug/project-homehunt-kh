@@ -32,16 +32,20 @@ body {
   color: var(--brand);
 }
 
-.logo svg {
-  width: 36px;
-  height: 36px;
-  fill: var(--brand);
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
 }
 
-.logo span {
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: -0.3px;
+.logo-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
 }
 
 .nav-links {
