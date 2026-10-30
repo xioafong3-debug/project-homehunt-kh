@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination Example</title>
+    <style>
+        body {
+            background-color: #fcece8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .pagination-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: transparent;
+            border: 1px solid #d1c4c4;
+            padding: 6px;
+            border-radius: 12px;
+        }
+
+        .page-btn {
+            background-color: #ffffff;
+            border: none;
+            outline: none;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+            color: #333;
+        }
+
+        .page-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        .all-btn {
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pagination-container">
+        <button class="page-btn">&lt;</button>
+        <button class="page-btn">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">&gt;</button>
+        <button class="page-btn all-btn">All</button>
+    </div>
+
+</body>
+</html>
