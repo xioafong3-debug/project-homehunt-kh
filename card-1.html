@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Room Cards</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9e5e7;
+            padding: 18px;
+        }
+
+        /* Card Container */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Card */
+        .card {
+            background-color: white;
+            padding: 6px;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+
+        /* Room Image */
+        .card img {
+            width: 100%;
+            height: 165px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Card Information */
+        .card-body {
+            padding: 8px 12px 0;
+        }
+
+        /* Room Type */
+        .room-type {
+            display: inline-block;
+            background-color: #ae2932;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        /* Price */
+        .price {
+            font-size: 20px;
+            margin-bottom: 14px;
+            color: black;
+        }
+
+        .price strong {
+            font-weight: bold;
+        }
+
+        /* Location */
+        .location {
+            font-size: 12px;
+            margin-bottom: 14px;
+            color: #333;
+        }
+
+        .location span {
+            color: red;
+            font-size: 16px;
+            margin-right: 7px;
+        }
+
+        /* Room Details */
+        .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            font-size: 10px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+
+        /* Button */
+        .button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            background-color: #ae2932;
+            color: white;
+            font-size: 18px;
+            padding: 3px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #7f1c24;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=80"
+                 alt="Studio room 1">
+
+            <div class="card-body">
+                <span class="room-type">Studio room</span>
+                <p class="price"><strong>50$</strong>/month</p>
+                <p class="location"><span>📍</span> Phnom Penh</p>
+
+                <div class="details">
+                    <div class="detail-item"><span class="icon">⛶</span> 25 m²</div>
+                    <div class="detail-item"><span class="icon">🛏</span> 1 Bed</div>
+                    <div class="detail-item"><span class="icon">🛁</span> 1 Bath</div>
+                </div>
+
+                <a href="#" class="button">View details ›</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80"
+                 alt="Studio room 2">
+
+            <div class="card-body">
+                <span class="room-type">Studio room</span>
+                <p class="price"><strong>55$</strong>/month</p>
+                <p class="location"><span>📍</span> Phnom Penh</p>
+
+                <div class="details">
+                    <div class="detail-item"><span class="icon">⛶</span> 25 m²</div>
+                    <div class="detail-item"><span class="icon">🛏</span> 1 Bed</div>
+                    <div class="detail-item"><span class="icon">🛁</span> 1 Bath</div>
+                </div>
+
+                <a href="#" class="button">View details ›</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80"
+                 alt="Studio room 3">
+
+            <div class="card-body">
+                <span class="room-type">Studio room</span>
+                <p class="price"><strong>60$</strong>/month</p>
+                <p class="location"><span>📍</span> Phnom Penh</p>
+
+                <div class="details">
+                    <div class="detail-item"><span class="icon">⛶</span> 25 m²</div>
+                    <div class="detail-item"><span class="icon">🛏</span> 1 Bed</div>
+                    <div class="detail-item"><span class="icon">🛁</span> 1 Bath</div>
+                </div>
+
+                <a href="#" class="button">View details ›</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80"
+                 alt="Studio room 4">
+
+            <div class="card-body">
+                <span class="room-type">Studio room</span>
+                <p class="price"><strong>70$</strong>/month</p>
+                <p class="location"><span>📍</span> Phnom Penh</p>
+
+                <div class="details">
+                    <div class="detail-item"><span class="icon">⛶</span> 25 m²</div>
+                    <div class="detail-item"><span class="icon">🛏</span> 1 Bed</div>
+                    <div class="detail-item"><span class="icon">🛁</span> 1 Bath</div>
+                </div>
+
+                <a href="#" class="button">View details ›</a>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=600&q=80"
+                 alt="Studio room 5">
+
+            <div class="card-body">
+                <span class="room-type">Studio room</span>
+                <p class="price"><strong>80$</strong>/month</p>
+                <p class="location"><span>📍</span> Phnom Penh</p>
+
+                <div class="details">
+                    <div class="detail-item"><span class="icon">⛶</span> 25 m²</div>
+                    <div class="detail-item"><span class="icon">🛏</span> 1 Bed</div>
+                    <div class="detail-item"><span class="icon">🛁</span> 1 Bath</div>
+                </div>
+
+                <a href="#" class="button">View details ›</a>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80"
+                 alt="Studio room 6">
+
+            <div class="card-body">
+                <span class="room-type">Studio room</span>
+                <p class="price"><strong>90$</strong>/month</p>
+                <p class="location"><span>📍</span> Phnom Penh</p>
+
+                <div class="details">
+                    <div class="detail-item"><span class="icon">⛶</span> 25 m²</div>
+                    <div class="detail-item"><span class="icon">🛏</span> 1 Bed</div>
+                    <div class="detail-item"><span class="icon">🛁</span> 1 Bath</div>
+                </div>
+
+                <a href="#" class="button">View details ›</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
