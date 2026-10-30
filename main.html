@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find Your Perfect Room</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Find Your<br />Perfect Room</h1>
+        <p class="hero__text">
+          Comfortable rooms, great locations,<br />
+          and a better living experience.
+        </p>
+      </div>
+
+      <form class="search" action="#" method="get">
+        <div class="search__fields">
+          <label class="select select--city">
+            <svg class="select__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"
+              />
+            </svg>
+            <span class="visually-hidden">City</span>
+            <select name="city">
+              <option>Phnom Penh</option>
+              <option>Siem Reap</option>
+              <option>Battambang</option>
+            </select>
+          </label>
+          <label class="select">
+            <span class="visually-hidden">District</span>
+            <select name="district">
+              <option>Boeng Kok</option>
+              <option>Toul Kork</option>
+              <option>Daun Penh</option>
+            </select>
+          </label>
+
+          <label class="select">
+            <span class="visually-hidden">Commune</span>
+            <select name="commune">
+              <option>Boeng kok</option>
+              <option>Boeng Kak 2</option>
+              <option>Phsar Daeum Kor</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="search__actions">
+          <label class="select select--red">
+            <span class="visually-hidden">Room type</span>
+            <select name="type">
+              <option>Room Type</option>
+              <option>Single room</option>
+              <option>Studio</option>
+              <option>Apartment</option>
+            </select>
+          </label>
+
+          <button class="search__btn" type="submit">
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+            Search
+          </button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
