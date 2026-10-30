@@ -1,0 +1,90 @@
+:root {
+  --bg: #fbe3e3;
+  --card: #ffffff;
+  --accent: #a4161a;
+  --icon-bg: #fbe3e3;
+  --text: #2b2b2b;
+  --muted: #555;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Poppins", system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.why {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px 56px;
+  text-align: center;
+}
+
+.why__title {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.why__title span { color: var(--accent); }
+
+.why__subtitle {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.why__grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 28px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__icon {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: var(--icon-bg);
+  display: grid;
+  place-items: center;
+}
+
+.card__icon svg {
+  width: 38px;
+  height: 38px;
+  fill: var(--accent);
+}
+
+.card__title {
+  margin-top: 16px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.card__text {
+  margin-top: 30px;
+  max-width: 150px;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .why__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .why__grid { grid-template-columns: 1fr; }
+  .why__title { font-size: 1.5rem; }
+}
