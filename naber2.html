@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Search Bar</title>
+    <style>
+        body {
+            background-color: #fcece8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 750px;
+            gap: 20px;
+        }
+
+  
+        .search-container {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #d1c4c4;
+            padding: 8px;
+            border-radius: 16px;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            gap: 8px;
+        }
+
+        .input-group select {
+            border: none;
+            outline: none;
+            font-size: 14px;
+            font-weight: bold;
+            background: transparent;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .location-icon {
+            color: #990000;
+            font-weight: bold;
+        }
+
+        .search-btn {
+            background-color: #99282b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .search-btn:hover {
+            background-color: #802023;
+        }
+
+  
+        .results-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .results-section h2 {
+            font-size: 20px;
+            color: #000;
+            margin: 0;
+        }
+
+        .sort-dropdown {
+            background-color: #ffffff;
+            border: 1px solid #333;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+  
+        <div class="search-container">
+  
+            <div class="input-group">
+                <span class="location-icon">📍</span>
+                <select>
+                    <option>Location</option>
+                    <option>Phnom Penh</option>
+                    <option>Siem Reap</option>
+                    <option>Sihanoukville</option>
+                </select>
+            </div>
+
+   
+            <div class="input-group">
+                <select>
+                    <option>Room type</option>
+                    <option>Single Room</option>
+                    <option>Double Room</option>
+                </select>
+            </div>
+
+
+            <button class="search-btn">
+                🔍 Search
+            </button>
+        </div>
+
+
+        <div class="results-section">
+            <h2>Showing 10 results</h2>
+            <select class="sort-dropdown">
+                <option>Sort by : Newest</option>
+                <option>Sort by : Oldest</option>
+                <option>Sort by : Price</option>
+            </select>
+        </div>
+    </div>
+
+</body>
+</html>
