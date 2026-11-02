@@ -1,0 +1,125 @@
+.card{
+    width:300px;
+    height:auto;
+    border: 1px solid black;
+    border-radius:10px;
+    padding: 15px;
+}
+.pic{
+    width:300px;
+    height:200px;
+    border-radius:10px;
+    background-image: url(/Cozy\ Blush\ Bedroom\ Retreat.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+h2{
+    color: #A4262C;
+    font-family: poppins;
+
+}
+p{
+    font-family: noto sans;
+}
+.price{
+    font-family: noto sans;
+    font-size: bold;
+}
+.information{
+    width:300px;
+    height:150px;
+}
+.material{
+    width:300px;
+    height:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:-10px;
+}
+i{
+    color:red;
+}
+.need-help{
+    width:300px;
+    height:230px;
+    border:1px solid black;
+    border-radius:10px;
+    margin-top:50px;
+}
+.icon-need-help{
+    width:250px;
+    height:40px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:20px;
+    margin-left: 20px;
+}
+span{
+    font-family: poppins;
+    font-size:24px;
+    font-weight:bold;
+}
+.fa-headset{
+    font-size:30px;
+}
+.text{
+    width: 300px;
+    height:50px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+.call{
+    width:300px;
+    height:30px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.email{
+    width:300px;
+    height:30px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.location{
+    width: 300px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.filloutform{
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.circle{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #F4ACAC;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #F4ACAC;
+}
+.fa-calendar-check{
+    font-size: 25px;
+}
+h3{
+    margin-left: 70px;
+    font-family: poppins;
+    font-size:bold;
+    margin-top: 10px;
+}
+.p{
+    margin-left: 20px;
+    margin-top:-10px;
+}
+

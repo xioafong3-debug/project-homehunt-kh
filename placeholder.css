@@ -1,0 +1,35 @@
+.placeholder{
+    width:350px;
+    height:35px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+p{
+    color: rgba(0, 0, 0, 0.2);
+    font-family:'Noto Sans';
+    font-size:16px;
+}
+.btn-send{
+    width:350px;
+    height:35px;
+    background-color:#A4262C;
+    border-radius:8px;
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+.send{
+    color:white;
+    font-family:poppins;
+    font-size:20px;
+    font-weight:bold;
+
+}
+i{
+    color:white;
+}
