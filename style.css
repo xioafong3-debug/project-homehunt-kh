@@ -89,12 +89,22 @@ span{
     margin-left: 20px;
     margin-top: -10px;
 }
+.box{
+    width: 950px;
+    height: 250px;
+    border: 1px solid black;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
 
 .filloutform{
     width: 250px;
     height: 200px;
     border: 1px solid black;
-    margin-top: 50px;
     border-radius: 10px;
 }
 .circle{
@@ -121,5 +131,47 @@ h3{
 .p{
     margin-left: 20px;
     margin-top:-10px;
+}
+.wecomfirm{
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px; 
+}
+.circle2{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #F4ACAC;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #F4ACAC; 
+}
+.visittheroom{
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.circle3{
+     width: 70px;
+    height: 70px;
+    border: 1px solid #F4ACAC;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #F4ACAC;  
+}
+.fa-arrow-right{
+    font-size: 25px;
+}
+.fa-house{
+    font-size: 25px;
 }
 
