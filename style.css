@@ -1,9 +1,9 @@
 .card{
-    width:300px;
+    width:350px;
     height:auto;
     border: 1px solid black;
     border-radius:10px;
-    padding: 15px;
+    padding: 25px;
 }
 .pic{
     width:300px;
@@ -21,6 +21,7 @@ h2{
 }
 p{
     font-family: noto sans;
+    margin-top: 10px;
 }
 .price{
     font-family: noto sans;
@@ -36,17 +37,17 @@ p{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-top:-10px;
+    margin-top:10px;
 }
 i{
     color:red;
 }
+
 .need-help{
     width:300px;
     height:230px;
     border:1px solid black;
     border-radius:10px;
-    margin-top:50px;
 }
 .icon-need-help{
     width:250px;
@@ -71,11 +72,18 @@ span{
     margin-top: -20px;
     margin-left: 10px;
 }
+.pharagraph{
+    margin-top: -10px;
+}
+p{
+    margin-top: 20px;
+}
 .call{
     width:300px;
     height:30px;
     margin-left: 20px;
-    margin-top: -20px;
+    margin-top: 5px;
+
 }
 .email{
     width:300px;
@@ -132,6 +140,13 @@ h3{
     margin-left: 20px;
     margin-top:-10px;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .wecomfirm{
     width: 250px;
     height: 200px;
@@ -175,3 +190,69 @@ h3{
     font-size: 25px;
 }
 
+body {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background: var(--bg);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--brand);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--brand);
+  border-bottom-color: var(--brand);
+  outline: none;
+}
+
+@media (max-width: 520px) {
+  .navbar { padding: 12px 16px; }
+  .logo span { font-size: 20px; }
+  .logo svg { width: 28px; height: 28px; }
+  .nav-links { gap: 14px; }
+}
