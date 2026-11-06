@@ -92,7 +92,7 @@ body {
   outline: none;
 }
 
-.hero {
+.hero1 {
   min-height: 380px;
   display: flex;
   flex-direction: column;
@@ -100,9 +100,7 @@ body {
   gap: 40px;
   padding: 52px var(--side) 32px;
   color: var(--white);
-  background:
-    url(/homepage/Img/main.png) center / cover no-repeat,
-    linear-gradient(135deg, #d9b79a, #a8715a);
+  background: url(/main.png) center / cover no-repeat;
 }
 
 .hero__title {
@@ -569,7 +567,7 @@ body {
   color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .footer__inner {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -781,10 +779,7 @@ img {
   gap: 40px;
   padding: 52px var(--side) 32px;
   color: var(--white);
-  background:
-    linear-gradient(90deg, rgba(60, 30, 20, 0.55) 0%, rgba(60, 30, 20, 0) 55%),
-    url(/homepage/Img/main.png) center / cover no-repeat,
-    linear-gradient(135deg, #d9b79a, #a8715a);
+  background: url(/main.png) center / cover no-repeat;
 }
 
 .hero__title {
@@ -1312,7 +1307,6 @@ img {
   height: 20px;
   color: #e74c3c;
 }
-
 .btn-visit {
   display: block;
   width: 100%;
@@ -1326,9 +1320,16 @@ img {
     600 0.75rem "Poppins",
     sans-serif;
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
   transition:
     background var(--ease),
     transform var(--ease);
+}
+
+.btn-visit:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
 }
 
 .btn-visit:hover {
@@ -1544,9 +1545,10 @@ img {
 
 .footer {
   margin-top: var(--section-space);
-  padding: 28px 24px 60px;
+  padding: 28px 24px 20px;
   background: var(--footer-bg);
   color: var(--text);
+  text-decoration: none;
 }
 
 .footer__inner {
@@ -1592,6 +1594,7 @@ img {
   font-weight: 600;
   text-decoration: underline;
   transition: opacity var(--ease);
+  text-decoration: none;
 }
 
 .footer a.footer__logo {
@@ -1653,33 +1656,20 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.features,
+.location {
+  width: 100%;
+  margin-bottom: 0;
+}
+.location {
+  margin-top: 20px;
+}
 
-@media (max-width: 860px) {
-  .page {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "gallery"
-      "summary"
-      "features-loc"
-      "amenities"
-      "similar";
-  }
-
-  .features,
-  .location {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  .location {
-    margin-top: 20px;
-  }
-
-  .similar-grid {
-    grid-template-columns: 1fr;
-  }
-  .main-photo {
-    height: 240px;
-  }
+.similar-grid {
+  grid-template-columns: 1fr;
+}
+.main-photo {
+  height: 240px;
 }
 
 @media (max-width: 800px) {
@@ -1763,9 +1753,9 @@ img {
 .hero-section {
   position: relative;
   width: 100%;
-  height: 280px;
-  background: url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=80")
-    center/cover no-repeat;
+  height: 380px;
+  background: url("/main.png") center/cover no-repeat;
+  object-fit: cover;
   display: flex;
   align-items: center;
   padding: 0 60px;
@@ -1902,7 +1892,7 @@ img {
 }
 
 .card {
-  background: var(--card-bg);
+  background: white;
   border-radius: 6px;
   overflow: hidden;
   display: flex;
@@ -1933,7 +1923,7 @@ img {
 }
 .room-type:hover {
   transform: scale(1.02);
-  background: pink;
+  background: rgb(97, 4, 20);
 }
 
 .price {
@@ -1941,18 +1931,28 @@ img {
   font-size: 16px;
   color: #111;
 }
-
-.location {
-  margin-bottom: 8px;
+.location1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+  width: 100%;
+  margin: 0 0 8px 0;
+  padding: 0;
+  text-align: left;
+  gap: 4px;
   color: #444;
   font-size: 12px;
 }
 
 .location span {
-  margin-right: 3px;
+  margin-right: 0;
   color: var(--brand);
 }
-
+.location1 span {
+  margin-right: 0;
+  color: var(--brand);
+}
 .details {
   display: flex;
   justify-content: space-between;
@@ -1974,6 +1974,7 @@ img {
   width: 100%;
   padding: 8px 0;
   background: var(--brand);
+  border-radius: 8px;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -1984,7 +1985,7 @@ img {
 
 .view-details:hover {
   transform: scale(1.02);
-  background: pink;
+  background: rgb(105, 6, 23);
 }
 
 .my-pagination {

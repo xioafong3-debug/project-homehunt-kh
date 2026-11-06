@@ -5,7 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Property – Home Hunt KH</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- 1) shared styles first, 2) page styles second -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="property.css" />
 </head>
 
 <body>
@@ -56,85 +61,61 @@
   </svg>
 
   <header class="navbar">
-    <a href="#" class="logo" aria-label="Home Hunt KH">
-      <img src="/homepage/Img/logo.png" alt="Home Hunt KH Logo" class="logo-img" />
+    <a href="index.html" class="logo" aria-label="Home Hunt KH home">
+      <img src="/logo.png" alt="Home Hunt KH" class="logo-img" />
     </a>
-
     <nav aria-label="Main">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="listing.html">Listings</a></li>
-        <li><a href="booking.html">Book a visit</a></li>
+        <li><a href="book-a-visit.html">Book a visit</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="page">
     <section class="gallery">
-      <img class="main-photo" src="/homepage/Img/main.png" alt="Bedroom" />
+      <img class="main-photo" src="/main.png" alt="Bedroom" />
       <div class="thumbs">
-        <img src="/homepage/Img/04_bedroom.jpg" alt="Room photo 2" />
-        <img src="/homepage/Img/03_kitchen.jpg" alt="Room photo 3" />
-        <img src="/homepage/Img/02_dining_room.jpg" alt="Room photo 4" />
-        <img src="/homepage/Img/01_bathroom.jpg" alt="Room photo 5" />
+        <img src="/04_bedroom.jpg" alt="Room photo 2" />
+        <img src="/03_kitchen.jpg" alt="Room photo 3" />
+        <img src="/02_dining_room.jpg" alt="Room photo 4" />
+        <img src="/01_bathroom.jpg" alt="Room photo 5" />
       </div>
     </section>
 
     <aside class="summary">
-      <div class="card price-card">
-        <div class="room-gallery">
-          <img src="/homepage/Img/04_bedroom.jpg" alt="Studio Room" class="main-image" />
-
-          <h2>Studio Room</h2>
-          <p class="loc">
-            <svg class="i" aria-hidden="true">
-              <use href="#i-pin" />
-            </svg>
-            Phnom Penh, Cambodia
-          </p>
-          <p class="price">$55 <span>/month</span></p>
-        </div>
-
-        <button class="btn-visit" type="button">Book a visit</button>
+      <div class="card">
+        <img src="/04_bedroom.jpg" alt="Studio Room" class="main-image" />
+        <h2>Studio Room</h2>
+        <p class="loc"><svg class="i" aria-hidden="true">
+            <use href="#i-pin" />
+          </svg>Phnom Penh, Cambodia</p>
+        <p class="price">$55 <span>/month</span></p>
+        <a href="book-a-visit.html" class="btn-visit">Book a visit</a>
       </div>
     </aside>
 
     <section class="card features">
       <h3>Room Features</h3>
       <ul>
-        <li>
-          <svg class="i" aria-hidden="true">
+        <li><svg class="i" aria-hidden="true">
             <use href="#i-sofa" />
-          </svg>Fully
-          Furnished
-        </li>
-        <li>
-          <svg class="i" aria-hidden="true">
+          </svg>Fully Furnished</li>
+        <li><svg class="i" aria-hidden="true">
             <use href="#i-sun" />
-          </svg>Natural
-          Lighting
-        </li>
-        <li>
-          <svg class="i" aria-hidden="true">
+          </svg>Natural Lighting</li>
+        <li><svg class="i" aria-hidden="true">
             <use href="#i-shield" />
-          </svg>Secure building
-        </li>
-        <li>
-          <svg class="i" aria-hidden="true">
+          </svg>Secure building</li>
+        <li><svg class="i" aria-hidden="true">
             <use href="#i-quiet" />
-          </svg>Quiet
-          neighborhood
-        </li>
+          </svg>Quiet neighborhood</li>
       </ul>
     </section>
 
-    <section class="card location">
-      <h3>
-        <svg class="i" aria-hidden="true">
-          <use href="" />
-        </svg>
-        About This Room
-      </h3>
+    <section class="card about-card">
+      <h3>About This Room</h3>
       <p class="about">
         A bright, comfortable studio room with a relaxing atmosphere,
         practical storage, and plenty of natural light. Ideal for students and
@@ -143,159 +124,104 @@
     </section>
 
     <section class="amenities">
-      <div class="amenity">
-        <svg class="i" aria-hidden="true">
+      <div class="amenity"><svg class="i" aria-hidden="true">
           <use href="#i-bed" />
-        </svg>
-        <span>1 Bed</span>
-      </div>
-      <div class="amenity">
-        <svg class="i" aria-hidden="true">
+        </svg><span>1 Bed</span></div>
+      <div class="amenity"><svg class="i" aria-hidden="true">
           <use href="#i-bath" />
-        </svg>
-        <span>1 Bathroom</span>
-      </div>
-      <div class="amenity">
-        <svg class="i" aria-hidden="true">
+        </svg><span>1 Bathroom</span></div>
+      <div class="amenity"><svg class="i" aria-hidden="true">
           <use href="#i-area" />
-        </svg>
-        <span>25 m²</span>
-      </div>
-      <div class="amenity">
-        <svg class="i" aria-hidden="true">
+        </svg><span>25 m²</span></div>
+      <div class="amenity"><svg class="i" aria-hidden="true">
           <use href="#i-wifi" />
-        </svg>
-        <span>Wi-Fi</span>
-      </div>
-      <div class="amenity">
-        <svg class="i" aria-hidden="true">
+        </svg><span>Wi-Fi</span></div>
+      <div class="amenity"><svg class="i" aria-hidden="true">
           <use href="#i-ac" />
-        </svg>
-        <span>Air conditioning</span>
-      </div>
-      <div class="amenity">
-        <svg class="i" aria-hidden="true">
+        </svg><span>Air conditioning</span></div>
+      <div class="amenity"><svg class="i" aria-hidden="true">
           <use href="#i-wardrobe" />
-        </svg>
-        <span>Wardrobe</span>
-      </div>
-      <div class="amenity">
-        <svg class="i" aria-hidden="true">
+        </svg><span>Wardrobe</span></div>
+      <div class="amenity"><svg class="i" aria-hidden="true">
           <use href="#i-desk" />
-        </svg>
-        <span>Desk &amp; Chair</span>
-      </div>
-      <div class="amenity">
-        <svg class="i" aria-hidden="true">
+        </svg><span>Desk &amp; Chair</span></div>
+      <div class="amenity"><svg class="i" aria-hidden="true">
           <use href="#i-window" />
-        </svg>
-        <span>Window View</span>
-      </div>
+        </svg><span>Window View</span></div>
     </section>
 
     <section class="similar">
       <div class="similar-head">
-        <h3>
-          <svg class="i" aria-hidden="true">
+        <h3><svg class="i" aria-hidden="true">
             <use href="#i-home" />
-          </svg>
-          Similar Rooms
-        </h3>
-        <a href="#">View All</a>
+          </svg>Similar Rooms</h3>
+        <a href="listing.html">View All</a>
       </div>
-
       <div class="similar-grid">
         <article class="room">
-          <img class="room-img" src="/homepage/Img/card.png" alt="Cozy Room" />
+          <img class="room-img" src="/card.png" alt="Condo Room" />
           <div class="room-info">
             <p class="room-price">$100 <span>/month</span></p>
             <h4>Condo Room</h4>
-            <p class="chip">
-              <svg class="i" aria-hidden="true">
+            <p class="chip"><svg class="i" aria-hidden="true">
                 <use href="#i-pin" />
-              </svg>
-              Phnom Penh
-            </p>
-            <p class="meta">
-              <svg class="i" aria-hidden="true">
+              </svg>Phnom Penh</p>
+            <p class="meta"><svg class="i" aria-hidden="true">
                 <use href="#i-bed" />
-              </svg>
-              1 Bed
-            </p>
-            <p class="meta">
-              <svg class="i" aria-hidden="true">
+              </svg>1 Bed</p>
+            <p class="meta"><svg class="i" aria-hidden="true">
                 <use href="#i-bath" />
-              </svg>
-              1 Bath
-            </p>
+              </svg>1 Bath</p>
           </div>
         </article>
-
         <article class="room">
-          <img class="room-img" src="/homepage/Img/card.png" alt="Cozy Room" />
+          <img class="room-img" src="/card.png" alt="Cozy Room" />
           <div class="room-info">
             <p class="room-price">$100 <span>/month</span></p>
             <h4>Cozy Room</h4>
-            <p class="chip">
-              <svg class="i" aria-hidden="true">
+            <p class="chip"><svg class="i" aria-hidden="true">
                 <use href="#i-pin" />
-              </svg>
-              Phnom Penh
-            </p>
-            <p class="meta">
-              <svg class="i" aria-hidden="true">
+              </svg>Phnom Penh</p>
+            <p class="meta"><svg class="i" aria-hidden="true">
                 <use href="#i-bed" />
-              </svg>
-              1 Bed
-            </p>
-            <p class="meta">
-              <svg class="i" aria-hidden="true">
+              </svg>1 Bed</p>
+            <p class="meta"><svg class="i" aria-hidden="true">
                 <use href="#i-bath" />
-              </svg>
-              1 Bath
-            </p>
+              </svg>1 Bath</p>
           </div>
         </article>
-
         <article class="room">
-          <img class="room-img" src="/homepage/Img/card.png" alt="Cozy Room" />
+          <img class="room-img" src="/card.png" alt="Apartments" />
           <div class="room-info">
             <p class="room-price">$100 <span>/month</span></p>
             <h4>Apartments</h4>
-            <p class="chip">
-              <svg class="i" aria-hidden="true">
+            <p class="chip"><svg class="i" aria-hidden="true">
                 <use href="#i-pin" />
-              </svg>
-              Phnom Penh
-            </p>
-            <p class="meta">
-              <svg class="i" aria-hidden="true">
+              </svg>Phnom Penh</p>
+            <p class="meta"><svg class="i" aria-hidden="true">
                 <use href="#i-bed" />
-              </svg>
-              1 Bed
-            </p>
-            <p class="meta">
-              <svg class="i" aria-hidden="true">
+              </svg>1 Bed</p>
+            <p class="meta"><svg class="i" aria-hidden="true">
                 <use href="#i-bath" />
-              </svg>
-              1 Bath
-            </p>
+              </svg>1 Bath</p>
           </div>
         </article>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="footer__inner">
-      <a href="#" class="footer__brand" aria-label="Home Hunt KH home">
-        <img class="footer__logo" src="/homepage/Img/logo-white.png" alt="Home Hunt KH" />
+      <a href="index.html" class="footer__brand" aria-label="Home Hunt KH home">
+        <img class="footer__logo" src="/logo-white.png" alt="Home Hunt KH" />
       </a>
+
       <nav class="footer__col footer__links" aria-label="Quick links">
         <h3 class="footer__title">Quick link</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Listing</a></li>
-          <li><a href="#">Book a visit</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listing.html">Listing</a></li>
+          <li><a href="book-a-visit.html">Book a visit</a></li>
         </ul>
       </nav>
 
@@ -316,7 +242,7 @@
               <path d="M5.5 8 3 13h5l1 2h6l1-2h5" />
               <path d="M12 3v7m-3-3 3 3 3-3" />
             </svg>
-            <a href="mailto:HomehuntKH12@gmail.com">Home hunt KH12@gmail.com</a>
+            <a href="mailto:HomehuntKH12@gmail.com">HomehuntKH12@gmail.com</a>
           </li>
           <li>
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
